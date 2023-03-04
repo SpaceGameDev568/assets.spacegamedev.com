@@ -34,3 +34,15 @@
     width: 100%;
     height: auto;
 }
+
+.content{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: Open Sans, sans-serif;
+    font-size: 1vw;
+}
