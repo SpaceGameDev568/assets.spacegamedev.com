@@ -1,0 +1,36 @@
+/* Add Orbitron Bold Font*/
+
+@font-face {
+    font-family: 'Orbitron';
+    font-style: bold;
+    font-weight: 700;
+    font-display: fallback;
+    src: local('Orbitron'), local('Orbitron Bold'), local('Orbitron-Bold'), url(Orbitron-Bold.ttf) format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: bold;
+    font-weight: 700;
+    font-display: fallback;
+    src: local('Open Sans'), local('Open Sans Bold'), local('Open-Sans-Bold'), url(OpenSans-Bold.ttf) format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* Whole Page */
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.full{
+    /*background-color: #272D33;*/
+    background-image: url('https://assets.spacegamedev.com/images/backgrounds/spikeyballart/BlueSpikeyBallRender.png');
+    width: 100%;
+    height: auto;
+}
