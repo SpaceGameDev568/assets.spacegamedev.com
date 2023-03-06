@@ -1,4 +1,10 @@
 /* Just add these to the top of the pages' css file and add the prefix "https://assets.spacegamedev.com/css/" to the source url of the font. */
+/* Also add these preconnects for quicker loading:   
+
+<link rel="preconnect" href="https://assets.spacegamedev.com"/>
+<link rel="preconnect" href="https://services.spacegamedev.com"/>
+
+*/
 
 @font-face {
     src: url('https://assets.spacegamedev.com/css/fonts/Orbitron-VariableFont_wght.ttf');
