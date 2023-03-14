@@ -49,7 +49,7 @@ DEL msgbox.vbs
 
 RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
 
-timeout /t 5
+timeout /t 7
 
 :: /r for restart, /s for shutdown
 shutdown /s -f -t 0
