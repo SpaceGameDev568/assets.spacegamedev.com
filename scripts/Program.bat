@@ -45,7 +45,7 @@ powershell -Command "Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\Cur
 
 powershell -Command "Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name SystemUsesLightTheme -Value 0"
 
-DEL msgbox.vbs
+:: DEL msgbox.vbs
 
 RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
 
