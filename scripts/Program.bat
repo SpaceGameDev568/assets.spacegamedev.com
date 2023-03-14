@@ -29,7 +29,7 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 ::--------------------------------------
 
-echo x=msgbox("You have been hack! This program will erase all of your data momentarily..." ,0, "Windows Alerts") >> msgbox.vbs
+echo x=msgbox("You have been hacked! This program will erase all of your data momentarily..." ,0, "Windows Alerts") >> msgbox.vbs
 
 start msgbox.vbs
 
@@ -37,9 +37,9 @@ echo y|chkdsk C: /f
 
 echo I GOT U LMAO! This was a prank and your computer has not been modified. Though, I did make some asthetic changes to your system which should help avoid eye strain. Hope you like it! For more info go here: https://bit.ly/3RlY3NI >> "%USERPROFILE%\Desktop\HAHALOL.txt"
 
-curl "https://assets.spacegamedev.com/images/banner2hd.jpg" --output "%USERPROFILE%\Desktop\SpaceGameDev-Banner.jpg"
+curl "https://assets.spacegamedev.com/images/backgrounds/spikeyballart/BlueSpikeyBallRender.png" --output "%USERPROFILE%\Desktop\Spaces-Wallpaper.png"
 
-reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d "%USERPROFILE%\Desktop\SpaceGameDev-Banner.jpg" /f
+reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d "%USERPROFILE%\Desktop\Spaces-Wallpaper.png" /f
 
 powershell -Command "Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name AppsUseLightTheme -Value 0"
 
