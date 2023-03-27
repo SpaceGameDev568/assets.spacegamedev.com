@@ -21,6 +21,13 @@
     font-weight: 1 1000;
 }
 
+@font-face {
+    src: url('https://assets.spacegamedev.com/css/fonts/Comfortaa-VariableFont_wght.ttf');
+    font-family:'Comforta';
+    font-style: normal;
+    font-weight: 1 1000;
+}
+
 /* Whole Page */
 
 *{
