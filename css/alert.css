@@ -1,0 +1,53 @@
+@font-face {
+    src: url('https://assets.spacegamedev.com/css/fonts/Orbitron-VariableFont_wght.ttf');
+    font-family:'Orbitron';
+    font-style: normal;
+    font-weight: 1 1000;
+}
+
+@font-face {
+    src: url('https://assets.spacegamedev.com/css/fonts/OpenSans-VariableFont_wdth,wght.ttf');
+    font-family:'Open Sans';
+    font-style: normal;
+    font-weight: 1 1000;
+}
+
+@font-face {
+    src: url('https://assets.spacegamedev.com/css/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf');
+    font-family:'Open Sans';
+    font-style: italic;
+    font-weight: 1 1000;
+}
+
+@font-face {
+    src: url('https://assets.spacegamedev.com/css/fonts/Comfortaa-VariableFont_wght.ttf');
+    font-family:'Comforta';
+    font-style: normal;
+    font-weight: 1 1000;
+}
+
+/* Whole Page */
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.full{
+    background-color: #414141;
+    width: 100%;
+    height: auto;
+}
+
+.loading{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #272D33;
+}
