@@ -3,6 +3,7 @@
     font-family:'Orbitron';
     font-style: normal;
     font-weight: 1 1000;
+    font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
     font-family:'Open Sans';
     font-style: normal;
     font-weight: 1 1000;
+    font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
     font-family:'Open Sans';
     font-style: italic;
     font-weight: 1 1000;
+    font-display: swap;
 }
 
 @font-face {
@@ -24,6 +27,7 @@
     font-family:'Comforta';
     font-style: normal;
     font-weight: 1 1000;
+    font-display: swap;
 }
 
 /* Whole Page */
