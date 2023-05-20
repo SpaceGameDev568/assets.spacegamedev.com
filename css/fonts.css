@@ -4,6 +4,16 @@
 <link rel="preconnect" href="https://assets.spacegamedev.com"/>
 <link rel="preconnect" href="https://lfs.spacegamedev.com"/>
 
+Asset Preloads:
+
+<link rel="preload" href="https://assets.spacegamedev.com/css/fonts/Orbitron-VariableFont_wght.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://assets.spacegamedev.com/css/fonts/OpenSans-VariableFont_wdth,wght.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://assets.spacegamedev.com/css/fonts/OpenSans-Italic-VariableFont_wdth,wght.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://assets.spacegamedev.com/css/fonts/Comfortaa-VariableFont_wght.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://assets.spacegamedev.com/css/fonts/FlowCircular-Regular.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://assets.spacegamedev.com/css/fonts/JetBrainsMono-VariableFont_wght.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://assets.spacegamedev.com/css/fonts/JetBrainsMono-Italic-VariableFont_wght.woff2" as="font" crossorigin="anonymous">
+
 */
 
 @font-face {
