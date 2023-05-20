@@ -37,3 +37,27 @@
     font-weight: 1 1000;
     font-display: swap;
 }
+
+@font-face {
+    src: url('https://assets.spacegamedev.com/css/fonts/FlowCircular-Regular.woff2');
+    font-family:'Flow Circular';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-display: swap;
+}
+
+@font-face {
+    src: url('https://assets.spacegamedev.com/css/fonts/JetBrainsMono-VariableFont_wght.woff2');
+    font-family:'JetBrains Mono';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-display: swap;
+}
+
+@font-face {
+    src: url('https://assets.spacegamedev.com/css/fonts/JetBrainsMono-Italic-VariableFont_wght.woff2');
+    font-family:'JetBrains Mono';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-display: swap;
+}
