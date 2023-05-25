@@ -1,23 +1,23 @@
-/* Just add these to the top of the pages' css file and add the prefix "https://assets.spacegamedev.com/css/" to the source url of the font. */
+/* Just add these to the top of the pages' css file and add the prefix "https://spacegamedev-assets.pages.dev/css/" to the source url of the font. */
 /* Also add these preconnects and preloads for quicker loading:   
 
-<link rel="preconnect" href="https://assets.spacegamedev.com"/>
+<link rel="preconnect" href="https://spacegamedev-assets.pages.dev"/>
 <link rel="preconnect" href="https://lfs.spacegamedev.com"/>
 
 Asset Preloads:
 
-<link rel="preload" href="https://assets.spacegamedev.com/css/fonts/Orbitron-VariableFont_wght.woff2" as="font" crossorigin="anonymous">
-<link rel="preload" href="https://assets.spacegamedev.com/css/fonts/OpenSans-VariableFont_wdth,wght.woff2" as="font" crossorigin="anonymous">
-<link rel="preload" href="https://assets.spacegamedev.com/css/fonts/OpenSans-Italic-VariableFont_wdth,wght.woff2" as="font" crossorigin="anonymous">
-<link rel="preload" href="https://assets.spacegamedev.com/css/fonts/Comfortaa-VariableFont_wght.woff2" as="font" crossorigin="anonymous">
-<link rel="preload" href="https://assets.spacegamedev.com/css/fonts/FlowCircular-Regular.woff2" as="font" crossorigin="anonymous">
-<link rel="preload" href="https://assets.spacegamedev.com/css/fonts/JetBrainsMono-VariableFont_wght.woff2" as="font" crossorigin="anonymous">
-<link rel="preload" href="https://assets.spacegamedev.com/css/fonts/JetBrainsMono-Italic-VariableFont_wght.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://spacegamedev-assets.pages.dev/css/fonts/Orbitron-VariableFont_wght.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://spacegamedev-assets.pages.dev/css/fonts/OpenSans-VariableFont_wdth,wght.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://spacegamedev-assets.pages.dev/css/fonts/OpenSans-Italic-VariableFont_wdth,wght.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://spacegamedev-assets.pages.dev/css/fonts/Comfortaa-VariableFont_wght.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://spacegamedev-assets.pages.dev/css/fonts/FlowCircular-Regular.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://spacegamedev-assets.pages.dev/css/fonts/JetBrainsMono-VariableFont_wght.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://spacegamedev-assets.pages.dev/css/fonts/JetBrainsMono-Italic-VariableFont_wght.woff2" as="font" crossorigin="anonymous">
 
 */
 
 @font-face {
-    src: url('https://assets.spacegamedev.com/css/fonts/Orbitron.woff2');
+    src: url('https://spacegamedev-assets.pages.dev/css/fonts/Orbitron.woff2');
     font-family:'Orbitron';
     font-style: normal;
     font-weight: 1 1000;
@@ -25,7 +25,7 @@ Asset Preloads:
 }
 
 @font-face {
-    src: url('https://assets.spacegamedev.com/css/fonts/OpenSans.woff2');
+    src: url('https://spacegamedev-assets.pages.dev/css/fonts/OpenSans.woff2');
     font-family:'Open Sans';
     font-style: normal;
     font-weight: 1 1000;
@@ -33,7 +33,7 @@ Asset Preloads:
 }
 
 @font-face {
-    src: url('https://assets.spacegamedev.com/css/fonts/OpenSans-Italic.woff2');
+    src: url('https://spacegamedev-assets.pages.dev/css/fonts/OpenSans-Italic.woff2');
     font-family:'Open Sans';
     font-style: italic;
     font-weight: 1 1000;
@@ -41,7 +41,7 @@ Asset Preloads:
 }
 
 @font-face {
-    src: url('https://assets.spacegamedev.com/css/fonts/Comfortaa.woff2');
+    src: url('https://spacegamedev-assets.pages.dev/css/fonts/Comfortaa.woff2');
     font-family:'Comfortaa';
     font-style: normal;
     font-weight: 1 1000;
@@ -49,7 +49,7 @@ Asset Preloads:
 }
 
 @font-face {
-    src: url('https://assets.spacegamedev.com/css/fonts/FlowCircular.woff2');
+    src: url('https://spacegamedev-assets.pages.dev/css/fonts/FlowCircular.woff2');
     font-family:'Flow Circular';
     font-style: normal;
     font-weight: 1 1000;
@@ -57,7 +57,7 @@ Asset Preloads:
 }
 
 @font-face {
-    src: url('https://assets.spacegamedev.com/css/fonts/JetBrainsMono.woff2');
+    src: url('https://spacegamedev-assets.pages.dev/css/fonts/JetBrainsMono.woff2');
     font-family:'JetBrains Mono';
     font-style: normal;
     font-weight: 1 1000;
@@ -65,7 +65,7 @@ Asset Preloads:
 }
 
 @font-face {
-    src: url('https://assets.spacegamedev.com/css/fonts/JetBrainsMono-Italic.woff2');
+    src: url('https://spacegamedev-assets.pages.dev/css/fonts/JetBrainsMono-Italic.woff2');
     font-family:'JetBrains Mono';
     font-style: normal;
     font-weight: 1 1000;
