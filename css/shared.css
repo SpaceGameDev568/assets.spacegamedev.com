@@ -1,0 +1,65 @@
+/* Copyright (©) 2022 - 2023  Jesse Hodgson. All Rights Reserved */
+
+/* Import font faces from the asset server */
+
+@font-face {
+    src: url('https://assets.spacegamedev.com/css/fonts/Orbitron-VariableFont_wght.woff2');
+    font-family:'Orbitron';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-display: optional;
+}
+
+@font-face {
+    src: url('https://assets.spacegamedev.com/css/fonts/OpenSans-VariableFont_wdth,wght.woff2');
+    font-family:'Open Sans';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-display: optional;
+}
+
+@font-face {
+    src: url('https://assets.spacegamedev.com/css/fonts/OpenSans-Italic-VariableFont_wdth,wght.woff2');
+    font-family:'Open Sans';
+    font-style: italic;
+    font-weight: 1 1000;
+    font-display: optional;
+}
+
+@font-face {
+    src: url('https://assets.spacegamedev.com/css/fonts/Comfortaa-VariableFont_wght.woff2');
+    font-family:'Comfortaa';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-display: optional;
+}
+
+/* Whole Page */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+/* Colour palette */
+
+:root{
+    --dark-background: #22272e;
+    --dark-foreground: #2d333b;
+    --dark-accent: #414141; /* #414141 */
+    --dark-text: #f0ffff;
+    --dark-border: #999999;
+    --sgd-blue: #1d68a4; /* #1d68a4 */
+
+    --light-background: #EBEBEB; /* #ddeeeb*/
+    --light-foreground: #acb1b3;
+    --light-accent: #414141; /* #83898d */
+    --light-text: #1c1c1d;
+    --light-border: #414141;
+    --light-sgd-blue: #014D8E; /* #004483 */
+
+    /* Styling */
+
+    --sgd-border-radius: 5px;
+}

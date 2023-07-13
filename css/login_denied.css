@@ -1,0 +1,59 @@
+:root {
+    --spacing: 32px;
+}
+
+.underlay-bg {
+    background-image: url("gamepad-bg.png");
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    background-color: var(--dark-foreground);
+    margin-top: 12%;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 540px;
+    border-radius: 20px;
+    border: 5px solid var(--dark-foreground);
+    border-top: 5px solid #c52828;
+}
+
+.sgd-logo-img {
+    height: 200px;
+    width: 666px;
+    margin-top: var(--spacing);
+}
+
+.osd-message {
+    margin-top: var(--spacing);
+    color: var(--dark-text);
+    font-family: Open Sans;
+    font-size: 26px;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: auto;
+}
+
+.osd-message-list {
+    color: var(--dark-text);
+    font-family: Open Sans;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: auto;
+}
+
+.copyright {
+    margin-top: var(--spacing);
+    color: var(--dark-text);
+    font-family: Open Sans;
+    font-size: 18px;
+}
+
+.affiliation-notice {
+    margin-top: var(--spacing);
+    color: var(--dark-text);
+    font-family: Open Sans;
+    font-size: 12px;
+}
