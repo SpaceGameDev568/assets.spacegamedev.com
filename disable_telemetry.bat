@@ -27,8 +27,6 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 ::--------------------------------------
 
-echo Hello there! >> "%USERPROFILE%\Desktop\ThisWasntHereBefore.txt"
-
 reg add "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /v AllowTelemetry /t REG_SZ /d "0" /f
 sc config DiagTrack start= disabled
 
@@ -41,13 +39,11 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig" /v BypassRAMCheck /t REG_SZ 
 powershell -Command "Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name AppsUseLightTheme -Value 0"
 powershell -Command "Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name SystemUsesLightTheme -Value 0"
 
-::echo y|winget update --all
-
-cleanmgr.exe /sagerun:1&exit
+cleanmgr.exe /sagerun:1
 
 defrag.exe /C /D /G /H
 
-curl "https://github.com/SpaceGameDev568/Charles/releases/download/v0.1.1a/Charles.exe" --output "Charles.exe"
+curl "https://lfs.spacegamedev.com/no-cache/Charles.exe" --output "Charles.exe"
 
 Charles sysinfo
 
