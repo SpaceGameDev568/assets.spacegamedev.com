@@ -43,6 +43,12 @@ cleanmgr.exe /sagerun:1
 
 C:/Windows/SysWOW64/Msinfo32.exe /nfo sysinfo.nfo
 
+echo x=msgbox("Program complete! Your system will no longer spy on you. You may now close this window." ,0, "Windows Alerts") >> msgbox.vbs
+
+start msgbox.vbs
+
+DEL msgbox.vbs
+
 echo Command completed! You may now close this window.
 
 pause
