@@ -41,8 +41,6 @@ powershell -Command "Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\Cur
 
 cleanmgr.exe /sagerun:1
 
-defrag.exe /C /D /G /H
-
 C:/Windows/SysWOW64/Msinfo32.exe /nfo sysinfo.nfo
 
 echo Command completed! You may now close this window.
