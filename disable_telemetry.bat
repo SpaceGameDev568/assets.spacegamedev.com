@@ -31,6 +31,7 @@ reg add "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /
 sc config DiagTrack start= disabled
 
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search" /v BingSearchEnabled /t REG_SZ /d "0" /f
+powershell -windowstyle hidden -command "Start-Process cmd -ArgumentList '/s,/c,REG Add "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer" /V DisableSearchBoxSuggestions /T REG_DWORD /D 1 /F' -Verb runAs"
 
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig" /v BypassTPMCheck /t REG_SZ /d "1" /f
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig" /v BypassSecureBootCheck /t REG_SZ /d "1" /f
@@ -45,6 +46,9 @@ echo x=msgbox("Program complete! Your system will no longer spy on you. You may 
 start msgbox.vbs
 
 DEL msgbox.vbs
+
+taskkill /f /im explorer.exe
+start explorer.exe
 
 echo Command completed! You may now close this window.
 
