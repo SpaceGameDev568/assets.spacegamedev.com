@@ -10,13 +10,15 @@
 
 .full{
     /*background-color: #272D33;*/
-    background-image: url('https://spacegamedev-assets.pages.dev/images/backgrounds/bluespikeyballblurred.png');
+    background-image: url('gamepad-bg.png');
     width: 100%;
     height: auto;
 }
 
 .content{
-    margin: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     position: absolute;
     top: 50%;
     left: 50%;
