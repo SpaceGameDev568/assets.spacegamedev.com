@@ -9,6 +9,11 @@
         stroke-width: 22px;
       }
 
+      .cls-3 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+
       .cls-2 {
         stroke-linecap: round;
       }
@@ -41,4 +46,5 @@
       <line class="cls-2" x1="370.668" y1="370.667" x2="401.416" y2="401.415"/>
     </g>
   </g>
+  <circle id="Fill" class="cls-3" cx="256" cy="256" r="112.5"/>
 </svg>
