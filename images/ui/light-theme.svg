@@ -9,11 +9,17 @@
         stroke-width: 22px;
       }
 
+      .cls-3 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+
       .cls-2 {
         stroke-linecap: round;
       }
     </style>
   </defs>
+  <circle id="Fill" class="cls-3" cx="256" cy="256" r="112.5"/>
   <circle id="Outline" class="cls-1" cx="256" cy="256" r="112.5"/>
   <g>
     <g id="_Radial_Repeat_" data-name="&amp;lt;Radial Repeat&amp;gt;">
