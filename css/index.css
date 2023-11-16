@@ -13,6 +13,7 @@
     background-image: url('gamepad-bg.png');
     width: 100%;
     height: auto;
+    background-repeat: repeat;
 }
 
 .content{
