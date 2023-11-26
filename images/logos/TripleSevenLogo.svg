@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 884.30154 272.07788">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 16px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-4, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-6);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-7);
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath-9);
+      }
+
+      .cls-10 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-11 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-12 {
+        clip-path: url(#clippath-8);
+      }
+
+      .cls-13 {
+        clip-path: url(#clippath-5);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" y="106.46572" width="442.15077" height="163.5477"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-2" x="442.15077" y="106.46572" width="442.15077" height="163.5477"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-2" x="390.74996" y="150.24432" width="51.40081" height="32.95093"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <rect class="cls-2" x="442.15077" y="150.24432" width="51.40081" height="32.95093"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <rect class="cls-2" x="425.63797" width="15.72185" height="105.28715"/>
+    </clipPath>
+    <clipPath id="clippath-5">
+      <rect class="cls-2" x="441.35969" width="15.72185" height="105.28715"/>
+    </clipPath>
+    <clipPath id="clippath-6">
+      <polygon class="cls-2" points="161.69047 150.24431 161.69047 150.24431 250.77869 150.24431 250.77869 239.33253 161.69047 239.33253 161.69047 150.24431"/>
+    </clipPath>
+    <clipPath id="clippath-7">
+      <polygon class="cls-2" points="721.02904 150.24431 721.02904 150.24431 631.94082 150.24431 631.94082 239.33253 721.02904 239.33253 721.02904 150.24431"/>
+    </clipPath>
+    <clipPath id="clippath-8">
+      <polygon class="cls-2" points="328.26052 98.67309 328.26052 98.67309 433.5469 98.67309 433.5469 114.47876 328.26052 114.47876 328.26052 98.67309"/>
+    </clipPath>
+    <clipPath id="clippath-9">
+      <polygon class="cls-2" points="554.45899 98.67309 554.45899 98.67309 449.17261 98.67309 449.17261 114.47876 554.45899 114.47876 554.45899 98.67309"/>
+    </clipPath>
+  </defs>
+  <g>
+    <g id="_Mirror_Repeat_" data-name="&amp;lt;Mirror Repeat&amp;gt;">
+      <g class="cls-10">
+        <path class="cls-4" d="m442.87906,270.01342C283.18695,159.09637-25.62646,114.47876,1.70027,106.57593c6.89644-1.99444,289.42308,22.62874,441.17879,110.9995l12.742,22.86198-12.742,29.57602Z"/>
+      </g>
+    </g>
+    <g id="_Mirror_Repeat_-2" data-name="&amp;lt;Mirror Repeat&amp;gt;">
+      <g class="cls-7">
+        <path class="cls-4" d="m441.42248,270.01342c159.69211-110.91705,468.50552-155.53467,441.17879-163.4375-6.89644-1.99444-289.42308,22.62874-441.17879,110.9995l-12.742,22.86198,12.742,29.57602Z"/>
+      </g>
+    </g>
+  </g>
+  <circle class="cls-1" cx="441.35981" cy="185.3269" r="78.75098"/>
+  <g>
+    <g id="_Mirror_Repeat_-3" data-name="&amp;lt;Mirror Repeat&amp;gt;">
+      <g class="cls-3">
+        <path class="cls-4" d="m442.15077,183.19525s-28.46851-3.23682-38.3183-9.15369c-9.92999-5.96515-37.55084-36.95563,38.92908-17.40887l12.05756,10.0871-12.66833,16.47546Z"/>
+      </g>
+    </g>
+    <g id="_Mirror_Repeat_-4" data-name="&amp;lt;Mirror Repeat&amp;gt;">
+      <g class="cls-11">
+        <path class="cls-4" d="m442.15077,183.19525s28.46851-3.23682,38.3183-9.15369c9.92999-5.96515,37.55084-36.95563-38.92908-17.40887l-12.05756,10.0871,12.66833,16.47546Z"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <g id="_Mirror_Repeat_-5" data-name="&amp;lt;Mirror Repeat&amp;gt;">
+      <g class="cls-8">
+        <path class="cls-4" d="m445.64087,68.81364l-4.28105,36.4735c-6.00103-.17936-9.95171-.53141-12.44243-.85053-2.06529-.26461-3.51365-2.15199-3.24801-4.21715l9.2289-96.93302c.24172-1.8792,1.84158-3.28645,3.73627-3.28645h2.54515l4.46117,68.81364Z"/>
+      </g>
+    </g>
+    <g id="_Mirror_Repeat_-6" data-name="&amp;lt;Mirror Repeat&amp;gt;">
+      <g class="cls-13">
+        <path class="cls-4" d="m437.07864,68.81364l4.28105,36.4735c6.00103-.17936,9.95171-.53141,12.44243-.85053,2.06529-.26461,3.51365-2.15199,3.24801-4.21715l-9.2289-96.93302c-.24172-1.8792-1.84158-3.28645-3.73627-3.28645h-2.54515l-4.46117,68.81364Z"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <g id="_Mirror_Repeat_-7" data-name="&amp;lt;Mirror Repeat&amp;gt;">
+      <g class="cls-5">
+        <circle class="cls-4" cx="206.23458" cy="194.78842" r="44.54411"/>
+      </g>
+    </g>
+    <g id="_Mirror_Repeat_-8" data-name="&amp;lt;Mirror Repeat&amp;gt;">
+      <g class="cls-6">
+        <circle class="cls-4" cx="676.48493" cy="194.78842" r="44.54411"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <g id="_Mirror_Repeat_-9" data-name="&amp;lt;Mirror Repeat&amp;gt;">
+      <g class="cls-12">
+        <path class="cls-4" d="m433.5469,114.47876c-.16601-6.02814-.50928-9.9974-.82285-12.50014-.26001-2.07526-2.14417-3.53588-4.20991-3.27547l-96.95321,8.96894c-1.87973.23696-3.29053,1.83954-3.29475,3.7426,0,0-.00258,1.91732-.00566,2.55642"/>
+      </g>
+    </g>
+    <g id="_Mirror_Repeat_-10" data-name="&amp;lt;Mirror Repeat&amp;gt;">
+      <g class="cls-9">
+        <path class="cls-4" d="m449.17261,114.47876c.16601-6.02814.50928-9.9974.82285-12.50014.26001-2.07526,2.14417-3.53588,4.20991-3.27547l96.95321,8.96894c1.87973.23696,3.29053,1.83954,3.29475,3.7426,0,0,.00258,1.91732.00566,2.55642"/>
+      </g>
+    </g>
+  </g>
+  <rect class="cls-4" x="432.35981" y="156.52651" width="18" height="26.28713" rx="8.99999" ry="8.99999"/>
+  <rect class="cls-4" x="437.35981" y="0" width="8" height="110.07107" rx="2.98515" ry="2.98515"/>
+  <rect class="cls-4" x="438.15077" y="217.16884" width="8" height="52.84458" rx="2.98515" ry="2.98515"/>
+</svg>
