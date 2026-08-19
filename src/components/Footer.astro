@@ -1,0 +1,98 @@
+---
+import {Image} from "astro:assets";
+
+import flag from "@assets/images/Flag_of_the_United_States_Wikipedia.svg"
+import BHLogomark from "@assets/images/BisectHostingLogomark.svg";
+
+import '@styles/global.css';
+---
+
+<div id="footer" class="bg-background-primary/75 backdrop-blur-sm p-10 mt-10 border-white/10 border-t border-b lg:flex">
+
+	<div class="w-fit lg:flex-col">
+
+		<a href="https://bisecthosting.com/spacegamedev?r=AssetServerFooter" class="flex items-center justify-center w-fit no-underline hover:bg-spacegamedev-primary duration-300 p-5">
+
+			<Image
+					src={BHLogomark}
+					alt="BisectHosting"
+					width="64"
+					height="64"
+					loading="eager"
+					class="mr-4"
+			/>
+			<div>
+				<p class="text-white  text-xl">Need a game server?</p>
+				<p class="text-white ">Click here and use code "SPACEGAMEDEV" for 25% off your first month!</p>
+			</div>
+
+		</a>
+
+		<br/><br/>
+
+		<hr class="border-white/10"/>
+
+		<br/><br/>
+
+		<Image
+		src={flag}
+		alt="American Flag"
+		height="50"
+		width="100"
+		class="float-left mr-5 mb-5"
+		/>
+
+		<p class="text-white w-fit float-left">Copyright © 2022 - 2026 Jesse Hodgson.
+
+			<br/>
+
+			Performance and security by Cloudflare.
+
+			<br/>
+
+			Source code available on <a href="https://github.com/SpaceGameDev568/assets.spacegamedev.com" class="text-spacegamedev-primary hover:text-blue-300 duration-300" target="_blank">GitHub </a>.
+
+			<br/><br/>
+
+			"And we know that for those who love God all things work together for good, for those who are called according to his purpose." - <a href="https://esv.org/Romans8:28" class="text-spacegamedev-primary hover:text-blue-300 duration-300" target="_blank">Romans 8:28, ESV</a>
+
+			<br/><br/>
+
+			Scripture quotations marked “ESV” are from the ESV® Bible (The Holy Bible, English Standard Version®), © 2001 by Crossway, a publishing ministry of Good News Publishers. Used by permission. All rights reserved. The ESV text may not be quoted in any publication made available to the public by a Creative Commons license. The ESV may not be translated into any other language.
+
+			<br/><br/>
+		</p>
+
+	</div>
+
+
+	<div class="lg:flex-col lg:mr-0 lg:ml-auto lg:float-right">
+		<div class="w-45.5 overflow-x-hidden lg:mr-0 lg:ml-auto">
+			<iframe title="Better Stack Status" src="https://status.spacegamedev.com/badge?theme=dark" id="betterstack-badge" width="250" height="30" loading="lazy"></iframe>
+		</div>
+
+		<br/>
+
+		<div class="lg:float-right w-fit">
+
+			<div class="w-fit lg:mr-0 lg:ml-auto">
+
+				<a target="_blank" href="https://uptime.betterstack.com" class="after:hidden">
+
+					<Image
+							src="https://uptime.betterstack.com/assets/static_assets/badges/dark.png"
+							id="betterstack-attribution"
+							width="260"
+							height="104"
+							alt="Better Stack Website Monitoring"
+							class="w-45"
+					/>
+				</a>
+
+			</div>
+
+			<br/>
+		</div>
+
+	</div>
+</div>

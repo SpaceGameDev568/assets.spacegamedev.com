@@ -1,0 +1,74 @@
+---
+
+import SidebarButton from './buttons/SidebarButton.astro';
+
+import SidebarToggleButton from './svelte/SidebarToggleButton.svelte';
+
+const props = Astro.props;
+
+import {Image} from "astro:assets";
+
+import '@styles/global.css';
+
+import HomeIcon from '@assets/images/MaterialIcons/home_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg';
+import BlogIcon from '@assets/images/MaterialIcons/news_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg';
+import LinksIcon from '@assets/images/MaterialIcons/link_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg';
+import HostingIcon from '@assets/images/MaterialIcons/dns_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg';
+import BHIcon from '@assets/images/Icons/BH_BRANDING_monochromatic_logomark.svg';
+import DocsIcon from '@assets/images/MaterialIcons/book_2_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg';
+import DiscordIcon from '@assets/images/Icons/DiscordWhite.svg';
+import OrgLogo from "@assets/images/OrgLogo.svg";
+---
+
+<div id="header" class="fixed h-13 bg-background-primary/25 w-full z-50 backdrop-blur-sm transition-colors duration-300 flex">
+
+	<SidebarToggleButton client:load/>
+
+	<p class="font-heading font-bold text-2xl mt-2 mr-auto ml-auto text-center w-fit text-white hidden md:block" title="Page Title">{props.pageName}</p>
+	<Image
+			src={OrgLogo}
+			alt="SpaceGameDev Logo"
+			width="24"
+			loading="eager"
+			class="mt-1.5 mr-2 w-fit h-10 ml-auto md:ml-0"
+	/>
+
+</div>
+
+<div id="sidebar" class="fixed h-[calc(100%-3.25rem)] top-13 w-full -left-full md:w-60 md:-left-60  m-0 z-50 bg-background-primary/25  backdrop-blur-sm md:after:w-25 md:after:bg-spacegamedev-primary flex flex-col duration-300" transition:persist>
+
+	<h1 class="text-white font-bold text-2xl m-auto font-heading text-left md:hidden w-[90%] mt-5 mb-5">
+		SpaceGameDev
+		<br/>
+		Modding
+	</h1>
+
+	<hr class="border-white/10" />
+	<SidebarButton title="Home" image={HomeIcon} alt="Home" link="/"/>
+	<SidebarButton title="Discord" image={DiscordIcon} alt="Discord" link="https://spacegamedev.com/discord"/>
+	<SidebarButton title="Hosting" image={BHIcon} alt="Hosting" link="https://spacegamedev.com/hosting"/>
+
+	<!--<div class="float-bottom mt-auto mb-0 h-fit"> -->
+
+		<br/>
+
+		<div class="w-fit ml-auto mr-auto">
+			<div class="md:float-left w-45.5 overflow-x-hidden">
+				<iframe title="Better Stack Status" src="https://status.spacegamedev.com/badge?theme=dark" id="betterstack-badge" width="250" height="30" loading="eager"></iframe>
+			</div>
+		</div>
+		<br/>
+
+		<hr class="border-white/10" />
+		<SidebarButton title="Main site" image={HomeIcon} alt="Main Site" link="https://docs.spacegamedev.com"/>
+		<SidebarButton title="Docs" image={DocsIcon} alt="Docs" link="https://docs.spacegamedev.com"/>
+	<!--</div>-->
+</div>
+
+<script>
+
+	import { animate } from "motion"
+
+	animate("#header", { y: [-50, 0], opacity: [0, 100] }, { ease: "easeInOut", duration: 1} )
+
+</script>

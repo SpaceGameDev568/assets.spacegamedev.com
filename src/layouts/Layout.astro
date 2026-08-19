@@ -1,0 +1,106 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+import '@styles/global.css';
+import Footer from '@components/Footer.astro';
+import Header from '@components/Header.astro';
+
+import { ClientRouter } from 'astro:transitions';
+import ScrollToTopButton from '@components/svelte/ScrollToTopButton.svelte';
+
+let FullTitle: string;
+
+if(import.meta.env.DEV) {
+	FullTitle = "DEV " + title;
+} else {
+	FullTitle = title;
+}
+---
+
+<!doctype html>
+<html lang="en" transition:animate="fade">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<link rel="canonical" href="https://assets.spacegamedev.com" />
+		<link rel="apple-touch-icon" sizes="256x256" href="/images/Favicon.ico" />
+		<link rel="icon" sizes="256x256" href="/images/Favicon.ico"/>
+		<link rel="icon" type="image/svg+xml" href="/images/Favicon.svg" />
+
+		<meta charset="UTF-8" />
+		<meta name="description" content="Asset server for SpaceGameDev Modding." />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+
+		<!-- Both -->
+		<meta name="theme-color" content="#0f68e4" />
+
+		<!-- OpenGraph -->
+		<meta property="og:title" content="SpaceGameDev Modding Asset Server" />
+		<meta property="og:site_name" content="assets.spacegamedev.com" />
+		<meta property="og:description" content="Asset server for SpaceGameDev Modding." />
+		<meta property="og:image" content="https://assets.spacegamedev.com/images/OpenGraphBanner.webp" />
+		<meta property="og:image:type" content="image/webp" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		 <meta property="og:image:alt" content="The SpaceGameDev Modding asset server logo superimposed over a screenshot of the Grass Fields biome in Satisfactory." />
+		<meta property="og:url" content="https://assets.spacegamedev.com/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_US" />
+
+		<!-- Twitter -->
+		<meta name="twitter:site" content="@SpaceGameDev568" />
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="SpaceGameDev Modding Asset Server">
+		<meta name="twitter:description" content="Asset server for SpaceGameDev Modding.">
+		<meta name="twitter:image" content="https://assets.spacegamedev.com/images/OpenGraphBanner.webp">
+
+		<title>{FullTitle}</title>
+		<ClientRouter />
+
+	</head>
+	<body class="bg-[url(/images/GrassFieldsGrid.webp)] bg-no-repeat bg-cover bg-center bg-blend-darken bg-black/30 bg-fixed">
+		<Header pageName={title} />
+
+		<ScrollToTopButton client:only="svelte" transition:persist="ScrollTopButton"/>
+
+		<div id="content">
+
+			<slot />
+
+		</div>
+
+		<Footer/>
+
+		<!-- ESV Cross-Reference Tool: https://www.esv.org/resources/esv-crossreference-tool/ -->
+		<!-- To ignore something, add the css class: esv-crossref-ignore -->
+		<script src="https://static.esvmedia.org/crossref/crossref.min.js" is:inline type="text/javascript"></script>
+
+		<script>
+			// Set CrossRef Options
+
+			// @ts-expect-error
+			window.ESV_CROSSREF_OPTIONS = {
+				border_color: '434749',
+				border_radius: 0,
+				header_font_color: 'FFFFFF',
+				body_font_color: 'FFFFFF',
+				footer_font_color: 'FFFFFF',
+				header_background_color: '252626',
+				body_background_color: '2C2E2F',
+				footer_background_color: '252626',
+				header_font_size: 16,
+				body_font_size: 14,
+				footer_font_size: 14,
+				header_font_family: 'Inter Tight',
+				body_font_family: 'Jetbrains Mono',
+				footer_font_family: 'Inter Tight'
+			};
+		</script>
+	</body>
+</html>

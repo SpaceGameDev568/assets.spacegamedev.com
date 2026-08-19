@@ -1,0 +1,10 @@
+---
+const props = Astro.props
+---
+
+<a href={props.link} target="_blank" class="flex items-center justify-center pl-4 pr-4 lg:w-fit md:pl-10 md:pr-10 h-10 mt-2 mb-2 m-auto pt-7 pb-7 no-underline border border-white/10 text-white select-none box-border text-2xl font-bold bg-bh-new-car hover:bg-bh-purple-x11 hover:ring-4 hover:ring-bh-purple-x11/50 duration-300 text-nowrap">
+
+    <span class="material-symbols-rounded text-lg"> {props.symbol} </span>
+    <p class="ml-2 lg:text-2xl text-base mr-2"> {props.title} </p>
+
+</a>

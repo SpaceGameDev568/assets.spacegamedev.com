@@ -1,0 +1,124 @@
+---
+import {Image} from 'astro:assets';
+
+import Layout from '@layouts/Layout.astro';
+
+// Components
+import ActionButton from "@components/buttons/ActionButton.astro";
+import ProjectCard from '@components/cards/ProjectCard.astro';
+import VerseOfTheDayWrapper from "@components/VerseOfTheDayWrapper.astro";
+
+// Miscellaneous images
+import OrgLogo from "@assets/images/OrgLogo.svg"
+import AssetServerLogo from "@assets/images/AssetServerLogo.webp"
+
+// Modding headers
+import SatisfactoryLogo from "@assets/images/SatisfactoryLogo.webp"
+import MinecraftLogo from "@assets/images/MinecraftLogo.svg";
+
+// Project logos
+import BetterGrassLogo from "@assets/images/ModLogos/BetterGrass.png";
+import DiscordRichPresenceLogo from "@assets/images/ModLogos/DiscordRichPresence.png";
+import FactoryPropsLogo from "@assets/images/ModLogos/FactoryProps.png";
+import ModUpdateNotifierLogo from "@assets/images/ModLogos/ModUpdateNotifier.png";
+import RemoveAllAnnoyancesLogo from "@assets/images/ModLogos/RemoveAllAnnoyances.png";
+import SatisWHACKtoryLogo from "@assets/images/ModLogos/SatisWHACKtory.png";
+import TwoMeterWallsLogo from "@assets/images/ModLogos/TwoMeterWalls.png";
+import IECLogo from "@assets/images/ModLogos/ImprovedExplorerCameras.png";
+import RagdollOnDemandLogo from "@assets/images/ModLogos/RagdollOnDemand.png";
+import PropPioneerLogo from "@assets/images/ModLogos/PropPioneer.png";
+import FactoryCartStationLogo from "@assets/images/ModLogos/FactoryCartStation.png";
+import CoffeeCupAddonsLogo from "@assets/images/ModLogos/CoffeeCupAddons.png";
+import QuickThirdPersonLogo from "@assets/images/ModLogos/QuickThirdPerson.png";
+
+import CoffeeCupCup from "@assets/images/EVENTTITLE.png";
+import KuvankaunisLogo from "@assets/images/ModLogos/Kuvankaunis.png";
+import SnapAxisLogo from "@assets/images/SnapAxis.svg";
+import ZLANLogo from "@assets/images/ZLANLogo.svg";
+---
+
+<Layout title="SGDM Asset Server">
+
+	<div id="header-spacer" class="h-12.5 mb-10"/>
+
+	<div class="m-auto w-[90%] 2xl:w-[80%]">
+
+		<div id="heading" class="mt-12.5 grid grid-cols-1 lg:grid-cols-2 items-center">
+
+			<div class="lg:order-last lg:ml-auto lg:mr-0">
+				<Image
+						src={AssetServerLogo}
+						alt="SpaceGameDev Asset Server"
+						width="512"
+						height="512"
+						loading="eager"
+						quality={100}
+						class="w-30 lg:w-sm xl:w-md 2xl:w-lg mb-4 2xl:m-none"
+				/>
+			</div>
+
+			<div class="leading-3">
+				<h1 class="font-heading font-bold text-white xl:text-8xl lg:text-6xl text-4xl">SpaceGameDev<br/>Modding</h1><br/>
+				<h2 class="text-neutral-200 lg:text-4xl text-3xl font-bold"> Asset Server </h2><br/>
+				<p class="text-white text-2xl bg-[#101014]/25 p-2 backdrop-blur-sm md:border border-white/10">
+					Built on Cloudflare Pages, this website serves static assets and media for linking elsewhere.
+				</p>
+				<div class="animate-bg-rgb-cycle w-full h-10"/>
+
+				<br/><br/>
+
+				<p class="text-white text-2xl bg-[#101014]/25 p-2 backdrop-blur-sm md:border border-white/10">
+					You're probably looking for my main website, which is linked below.
+					Or, you can join the Discord if you have a question.
+				</p>
+
+				<br/>
+
+				<div class="flex flex-wrap gap-5 w-fit m-auto sm:m-0">
+
+					<ActionButton
+							link="https://spacegamedev.com"
+							title="Main Site"
+							variant="primary"
+							target="_self"
+					/>
+
+					<ActionButton
+							link="https://spacegamedev.com/discord"
+							title="Discord"
+							variant="secondary"
+							target="_self"
+					/>
+
+				</div>
+
+				<br/><br/>
+
+				<div class="w-fit bg-[#101014]/25 p-5 backdrop-blur-sm md:border border-white/10">
+					<div class="w-45.5 overflow-x-hidden">
+						<iframe title="Better Stack Status" src="https://status.spacegamedev.com/badge?theme=dark" id="betterstack-badge" width="250" height="30" loading="eager"></iframe>
+					</div>
+				</div>
+
+			</div>
+
+			<script>
+				import {animate} from "motion"
+
+				document.addEventListener('astro:page-load', () => {
+					animate("#heading", {y: [225, 0], opacity: [0, 100]}, {ease: "easeInOut", duration: 1})
+
+				});
+			</script>
+
+		</div>
+
+		<br/><br/>
+
+		<div class="bg-[#101014]/25 p-5 backdrop-blur-sm w-fit m-auto">
+			<VerseOfTheDayWrapper/>
+		</div>
+
+	</div>
+
+</Layout>

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
+@import "tailwindcss";
+
+.material-symbols-rounded {
+	font-variation-settings:
+			'FILL' 1,
+			'wght' 400,
+			'GRAD' 0,
+			'opsz' 48;
+}
+
+a[target="_blank"]::after {
+	content: '↗';
+	margin-left: 10px;
+	font-family: 'Jetbrains Mono', 'monospace';
+}
+
+@layer base {
+	html {
+		@apply scroll-smooth;
+	}
+}
+
+@theme {
+	--font-sans: 'JetBrains Mono', 'sans-serif';
+	--font-serif: 'serif';
+	--font-mono: 'JetBrains Mono', 'monospace';
+	--font-heading: 'JetBrains Mono', 'sans-serif';
+	--font-icon: 'Material Symbols Rounded';
+	--font-bh-heading: 'Akira Expanded', 'sans-serif';
+	--font-bh-sans: 'Montserrat', 'sans-serif';
+
+	--color-spacegamedev-primary: #0f68e4; /* Alternatives: #1d68a4, #0f68e4 */
+
+	--color-background-primary: #272C31;
+	--color-background-secondary: #31363D;
+
+	--color-grad-blue: #0f68e4;
+	--color-grad-purple: #6a1fbb;
+	--color-grad-magenta: #a3159f;
+	--color-grad-red: #ca3434;
+
+	--color-spacegamedev-gradient: linear-gradient(180deg, white, black);
+
+	/* BisectHosting Colors */
+	--color-bh-vivid-sky-blue: #03ddff;
+	--color-bh-white: #FFFFFF;
+	--color-bh-eerie-black: #0D1129;
+	--color-bh-eucalyptus: #37D79D;
+	--color-bh-new-car: #1B57C4;
+	--color-bh-purple-x11: #B739F2;
+
+	--animate-breathe: breathe 10s ease-in-out infinite;
+
+	@keyframes breathe {
+		0% {transform: scale(1);}
+		50% {transform: scale(0.9);}
+		100% {transform: scale(1);}
+	}
+
+	--animate-rgb-cycle: rgb-cycle 10s ease-out infinite;
+
+	@keyframes rgb-cycle {
+		0% { color: oklch(0.568 0.213 27.41); }
+		10% { color: oklch(0.694 0.159 57.574); }
+		20% { color: oklch(0.85 0.169 101.109); }
+		30% { color: oklch(0.854 0.197 120.903); }
+		40% { color: oklch(0.778 0.239 138.896); }
+		50% { color: oklch(0.777 0.227 145.726); }
+		60% { color: oklch(0.716 0.124 219.258); }
+		70% { color: oklch(0.571 0.16 263.435); }
+		80% { color: oklch(0.548 0.212 301.885); }
+		90% { color: oklch(0.618 0.231 322.195); }
+		100% { color: oklch(0.572 0.211 20.341); }
+	}
+
+	--animate-bg-rgb-cycle: bg-rgb-cycle 10s ease-out infinite;
+
+	@keyframes bg-rgb-cycle {
+		0% { background-color: oklch(0.568 0.213 27.41); }
+		10% { background-color: oklch(0.694 0.159 57.574); }
+		20% { background-color: oklch(0.85 0.169 101.109); }
+		30% { background-color: oklch(0.854 0.197 120.903); }
+		40% { background-color: oklch(0.778 0.239 138.896); }
+		50% { background-color: oklch(0.777 0.227 145.726); }
+		60% { background-color: oklch(0.716 0.124 219.258); }
+		70% { background-color: oklch(0.571 0.16 263.435); }
+		80% { background-color: oklch(0.548 0.212 301.885); }
+		90% { background-color: oklch(0.618 0.231 322.195); }
+		100% { background-color: oklch(0.572 0.211 20.341); }
+	}
+}
+
+::selection {
+	color: white;
+	background-color: #02bba7;
+}

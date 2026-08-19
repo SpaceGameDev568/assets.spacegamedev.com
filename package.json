@@ -1,0 +1,24 @@
+{
+  "name": "assets.spacegamedev.com",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/svelte": "^9.0.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.2.3",
+    "motion": "^12.43.0",
+    "sharp": "^0.33.5",
+    "svelte": "^5.56.9",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "wrangler": "^4.124.0"
+  }
+}

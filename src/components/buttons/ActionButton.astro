@@ -1,0 +1,38 @@
+---
+const props = Astro.props
+
+interface Props {
+	title: string;
+	link: string;
+	target: string;
+	variant?: 'primary' | 'secondary' | 'large_primary' | 'bh_primary' | 'bh_secondary';
+	}
+
+const { title, link, target, variant = 'primary' } = Astro.props;
+
+// Map props to static Tailwind classes
+const colorVariants: Record<string, string> = {
+	primary: "bg-spacegamedev-primary hover:bg-blue-300 hover:ring-spacegamedev-primary/50",
+	secondary: "bg-black ring-white/20 hover:bg-white hover:text-black",
+	large_primary: "bg-spacegamedev-primary hover:bg-blue-300 hover:ring-spacegamedev-primary/50 text-xl lg:text-xl lg:pt-5 lg:pb-5 pl-6 pr-6",
+	bh_primary: "bg-bh-new-car hover:bg-bh-purple-x11 hover:ring-bh-purple-x11/50",
+	bh_secondary: "bg-bh-eerie-black hover:bg-bh-purple-x11 hover:ring-bh-purple-x11/50",
+};
+
+const variantClass = colorVariants[variant] || colorVariants['primary'];
+---
+
+<a id="ActionButton" href={link} target={target} class={`text-white text-lg pt-4 pb-4 pl-6 pr-6 font-bold duration-300 box-border hover:ring-4 select-none ${variantClass} border border-gray-500/50 whitespace-nowrap`}>
+	{title}
+</a>
+
+<script type="module">
+	import {animate, press} from "motion"
+
+	press("#ActionButton", (element) => {
+		animate(element, {scale: 0.8}, {type: "spring", stiffness: 1000})
+
+		return () =>
+			animate(element, {scale: 1}, {type: "spring", stiffness: 500})
+	})
+</script>

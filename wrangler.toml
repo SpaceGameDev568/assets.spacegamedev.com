@@ -1,0 +1,9 @@
+name = "spacegamedev"
+pages_build_output_dir = "./dist"
+# Set this to today's date
+compatibility_date = "2026-08-19"
+preview_urls = true
+
+#[assets]
+#directory = "./dist/"
+#not_found_handling = "404-page"

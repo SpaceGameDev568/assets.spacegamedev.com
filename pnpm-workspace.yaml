@@ -1,0 +1,9 @@
+allowBuilds:
+  esbuild: true
+  sharp: true
+  '@tailwindcss/oxide': true
+  workerd: true
+minimumReleaseAgeExclude:
+  - astro@7.1.1 || 7.2.3
+  - '@astrojs/internal-helpers@0.10.3'
+  - '@astrojs/markdown-satteri@0.3.6'
