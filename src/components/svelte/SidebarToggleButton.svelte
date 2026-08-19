@@ -41,10 +41,15 @@
 </script>
 
 <button
-    class="material-symbols-rounded w-auto h-full aspect-square text-white hover:bg-spacegamedev-primary duration-300 bg-transparent select-none hover:ring-4 hover:ring-spacegamedev-primary/50 cursor-pointer border-r border-white/10"
+    class="w-auto h-full aspect-square text-white hover:bg-spacegamedev-primary duration-300 bg-transparent select-none hover:ring-4 hover:ring-spacegamedev-primary/50 cursor-pointer border-r border-white/10"
     title="Toggle Sidebar"
     on:click={toggleSidebar}
-    id="material-icon"
 >
-  {state}
+  <img
+          src="/images/MaterialIcons/{state}_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg"
+          alt="{state}"
+          width="28"
+          height="28"
+          class="w-7 h-7 ml-2.5"
+  />
 </button>
